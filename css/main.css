@@ -1,0 +1,272 @@
+body {
+    background-color: #FFFCF2;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}
+
+/* Lines for the header */
+
+#header{
+    background-color: #CCC5B9;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    margin: auto 0px auto 0px;
+
+    display: flex;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    display: block;
+}
+
+#header-img {
+    height: 100%;
+    max-width: 100%;
+}
+
+#nav-bar {
+    background-color: #CCC5B9;
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly; 
+    margin-left: 40%;
+    margin-top: 30px;
+}
+
+/* Lines for form section */
+
+#subscription {
+    background-color: #FFFCF2;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 115px;
+}
+
+#subscription-text {
+    font-size: 1.5rem;
+    margin: 1%;
+}
+
+
+#email {
+    margin-bottom: 2%;
+    height: 2rem;
+    width: 15rem;
+    padding-left: 8px;
+    border-radius: 3px solid;
+    border-color: black;
+}
+
+#submit {
+    background-color: #568259;
+    border: solid;
+    margin-bottom: 2%;
+    height: 2rem;
+    width: 6rem;
+}
+
+/* Lines for features section */
+
+#features {
+    background-color: #FFFCF2;
+    height: 900px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5% auto 0 auto;
+}
+
+.feature {
+    display: flex;
+    background-color: #FFFCF2;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.description {
+    background-color: #FFFCF2;
+    width: 80%;
+    padding-left: 10px;
+}
+
+
+.feature-img {
+    max-width: 100%;
+    display: block;
+    margin-left: 0%;
+} 
+
+/* Lines for section video */
+
+#section-video {
+    background-color: #FFFCF2;
+}
+
+#video {
+    display: flex;
+    margin: 10% auto 10% auto;
+}
+
+/* Lines for pricing section */ 
+
+#pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+    width: 80%;
+    margin: auto;
+}
+
+.price-groups {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    margin: 0 1% 0 1%;
+    border: 1px solid;
+}
+
+.product-name {
+    background-color: rgb(231, 231, 231);
+    text-align: center;
+    font-size: 1.2rem;
+    height: 12%;
+}
+
+.product-content {
+    background-color: #FFFCF2;
+    text-align: center;
+    height: 85%;
+}
+
+.prices {
+    height: 11%;
+    margin: auto;
+    font-size: 1.3rem;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 75%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    padding-left: 5%;
+}
+
+li {
+    text-align: left;
+    list-style: none;
+}
+
+
+button {
+    background-color: #568259;
+    border: 2px solid;
+    font-family: 'Oswald', sans-serif;
+    height: 12%;
+    width: 65%;
+}
+
+/* Lines for the footer */
+
+footer {
+    background-color: rgb(231, 231, 231);
+}
+
+footer {
+    width: 65%;
+    margin: auto;
+}
+
+#footer-list, span {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1%;
+}
+
+.footer-items {
+    margin-left: 3%;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+    #header {
+        flex-wrap: wrap;
+        height: 70px;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 0px auto 0px auto;
+    }
+
+    ul {
+        margin: 20px 0 20px 0;
+        padding-left: 0;
+    }
+    /*  From  */
+    #subscription {
+        margin-top: 180px;
+    }
+
+    /*  Features  */
+    #features {
+        width: 500px;
+        margin-top: 5%;
+    }
+
+    .feature-img {
+        width: 150px;
+    }
+
+    /*  video  */
+    video {
+        position: flex;
+    }
+
+    /*  Pricing  */
+    #pricing {   
+        height: 1000px; 
+        flex-direction: column; 
+        margin-top: 10%;
+    }
+
+    .price-groups {
+        max-width: 300px;
+        width: 100%;
+        height: 300px;
+        margin: 0 auto 50px auto;
+    }
+
+    ol {
+        font-size: 1rem;
+    }
+
+    /*  footer  */
+
+    footer {
+        display: none;
+    }
+}
